@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Merged Table Columns Example</title>
+  <link rel="stylesheet" href="./main.css">
+  <title>Receipt</title>
 </head>
 <body>
 
 <div class="container my-4">
-  <h2>GRN</h2>
+  <h2 id="title">GRN</h2>
   <section class="details">
     <p>Printed On: <span id="date"></span></p>
 </section>
@@ -35,41 +36,38 @@
         </thead>
       <thead>
         <tr>
-          <th>Header 1</th>
-          <th>Header 2</th>
-          <th>Header 3</th>
-          <th>Header 4</th>
-          <th>Header 5</th>
-          <th>Header 6</th>
-          <th>Header 7</th>
-          <th>Header 8</th>
-          <th>Header 9</th>
-          <th>Header 10</th>
-          <th>Header 11</th>
-          <th>Header 12</th>
-          <th>Header 13</th>
+          <th>Sr.No</th>
+          <th>Item Code</th>
+          <th>Item Name</th>
+          <th>Received Quantity</th>
+          <th>Free Quantity</th>
+          <th>Total Quantity</th>
+          <th>Mes Unit</th>
+          <th>Item Level Discount %</th>
+          <th>Tax Name</th>
+          <th>Item Unit Price After Tax</th>
+          <th>Effective Rate Per Unit</th>
+          <th>MRP</th>
+          <th>Total After Tax</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>Data 1</td>
-          <td>Data 2</td>
-          <td>Data 3</td>
-          <td>Data 4</td>
-          <td>Data 5</td>
-          <td>Data 6</td>
-          <td>Data 7</td>
-          <td>Data 8</td>
-          <td>Data 9</td>
-          <td>Data 10</td>
-          <td>Data 11</td>
-          <td>Data 12</td>
-          <td>Data 13</td>
-        </tr>
+      <tbody id="item-list">
+       
       </tbody>
       <tfoot>
         <tr>
-            <td colspan="13">Merged Column</td>
+          <td colspan="7">
+            <section  id="name">Receiving Employee: </section>
+          </td>
+            <td colspan="6">
+              <section class="totals">
+                <p>Sub Total: <span id="sub_total"></span></p>
+                <p>Round Off Adjustment Amount: <span id="round_off"></span></p>
+                <p>Total Amount: <span id="total_amount"></span></p>
+                <p>Use Supplier Advance Amount: <span id="supplier_advance_amount"></span></p>
+                <p>Grand Total: <span id="grand_total"></span></p>
+              </section>
+            </td>
           </tr>
     </tfoot>
     </table>
