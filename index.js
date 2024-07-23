@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const name="MUHAMMED SHAKKEER"
   const round_off_adjustment_amount=0.000;
   const user_supplier_advance_amount=0.000;
+
   const receiptData = {
+    // Converts a date to a string by using the current or specified locale.
     date: new Date().toLocaleDateString(),
     grn_num: "BST-GRN01558",
     warehouse_name: "CHIC BY SISTERS CLINIC",

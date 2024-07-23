@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
   <link rel="stylesheet" href="./main.css">
   <title>Receipt</title>
 </head>
 <body>
 
-<div class="container my-4">
+<div class="container">
   <h2 id="title">GRN</h2>
   <section class="details">
     <p>Printed On: <span id="date"></span></p>
@@ -56,17 +56,21 @@
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="7">
+          <td colspan="7" >
             <section  id="name">Receiving Employee: </section>
           </td>
+          <div class="box-last">
             <td colspan="6">
+
+<div class="box-last">
               <section class="totals">
-                <p>Sub Total: <span id="sub_total"></span></p>
-                <p>Round Off Adjustment Amount: <span id="round_off"></span></p>
-                <p>Total Amount: <span id="total_amount"></span></p>
-                <p>Use Supplier Advance Amount: <span id="supplier_advance_amount"></span></p>
-                <p>Grand Total: <span id="grand_total"></span></p>
+                <p> <b>Sub Total:</b> <span id="sub_total"></span></p>
+                <p> <b>Round Off Adjustment Amount:</b> <span id="round_off"></span></p>
+                <p><b>Total Amount: </b><span id="total_amount"></span></p>
+                <p><b>Use Supplier Advance Amount:</b> <span id="supplier_advance_amount"></span></p>
+                <p><b>Grand Total:</b> <span id="grand_total"></span></p>
               </section>
+            </div>
             </td>
           </tr>
     </tfoot>
